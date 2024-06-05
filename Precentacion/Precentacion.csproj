@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{089E3CF1-9545-4634-A01C-EF59A4603756}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Precentacion</RootNamespace>
+    <AssemblyName>Precentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Alan\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.3.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Diseños_Personalizados\Dñ_Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Diseños_Personalizados\Dñ_ComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Diseños_Personalizados\Dñ_TextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Diseños_Personalizados\Dñ_TextBox.Designer.cs">
+      <DependentUpon>Dñ_TextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Area.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Area.Designer.cs">
+      <DependentUpon>Area.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Articulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Articulo.Designer.cs">
+      <DependentUpon>Articulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Categoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Categoria.Designer.cs">
+      <DependentUpon>Categoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\DetalleTransferencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\DetalleTransferencia.Designer.cs">
+      <DependentUpon>DetalleTransferencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Inicio_Seccion\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Inicio_Seccion\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Proveedor.Designer.cs">
+      <DependentUpon>Proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\DS_Reporte_Area.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Reporte_Area.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\DS_Reporte_Articulo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Reporte_Articulo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\DS_Reporte_Categoria.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Reporte_Categoria.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\DS_Reporte_Detalle_Transferencia.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Reporte_Detalle_Transferencia.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\DS_Reporte_Proveedor.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Reporte_Proveedor.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\DS_Reporte_Responsable.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Reporte_Responsable.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\DS_Reporte_Transferencia.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Reporte_Transferencia.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Frm_Reporte_Area.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Frm_Reporte_Area.Designer.cs">
+      <DependentUpon>Frm_Reporte_Area.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Frm_Reporte_Articulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Frm_Reporte_Articulo.Designer.cs">
+      <DependentUpon>Frm_Reporte_Articulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Frm_Reporte_Categoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Frm_Reporte_Categoria.Designer.cs">
+      <DependentUpon>Frm_Reporte_Categoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Frm_Reporte_Detalle_Transferencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Frm_Reporte_Detalle_Transferencia.Designer.cs">
+      <DependentUpon>Frm_Reporte_Detalle_Transferencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Frm_Reporte_Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Frm_Reporte_Proveedor.Designer.cs">
+      <DependentUpon>Frm_Reporte_Proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Frm_Reporte_Responsable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Frm_Reporte_Responsable.Designer.cs">
+      <DependentUpon>Frm_Reporte_Responsable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Frm_Reporte_Transferencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Frm_Reporte_Transferencia.Designer.cs">
+      <DependentUpon>Frm_Reporte_Transferencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Responsable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Responsable.Designer.cs">
+      <DependentUpon>Responsable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Transferencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Transferencia.Designer.cs">
+      <DependentUpon>Transferencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Principal.Designer.cs">
+      <DependentUpon>Menu_Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Prueba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prueba.Designer.cs">
+      <DependentUpon>Prueba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="Diseños_Personalizados\Dñ_TextBox.resx">
+      <DependentUpon>Dñ_TextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Area.resx">
+      <DependentUpon>Area.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Articulo.resx">
+      <DependentUpon>Articulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Categoria.resx">
+      <DependentUpon>Categoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\DetalleTransferencia.resx">
+      <DependentUpon>DetalleTransferencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Inicio_Seccion\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Proveedor.resx">
+      <DependentUpon>Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\Frm_Reporte_Area.resx">
+      <DependentUpon>Frm_Reporte_Area.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\Frm_Reporte_Articulo.resx">
+      <DependentUpon>Frm_Reporte_Articulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\Frm_Reporte_Categoria.resx">
+      <DependentUpon>Frm_Reporte_Categoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\Frm_Reporte_Detalle_Transferencia.resx">
+      <DependentUpon>Frm_Reporte_Detalle_Transferencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\Frm_Reporte_Proveedor.resx">
+      <DependentUpon>Frm_Reporte_Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\Frm_Reporte_Responsable.resx">
+      <DependentUpon>Frm_Reporte_Responsable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\Frm_Reporte_Transferencia.resx">
+      <DependentUpon>Frm_Reporte_Transferencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\Rpt_Listar_Area.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\Rpt_Listar_Articulo.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\Rpt_Listar_Categoria.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\Rpt_Listar_Detalle_Transferencia.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\Rpt_Listar_Proveedor.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\Rpt_Listar_Responsable.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\Rpt_Listar_Transferencia.rdlc" />
+    <EmbeddedResource Include="Formularios\Responsable.resx">
+      <DependentUpon>Responsable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Transferencia.resx">
+      <DependentUpon>Transferencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Principal.resx">
+      <DependentUpon>Menu_Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Prueba.resx">
+      <DependentUpon>Prueba.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Formularios\Reportes\DS_Reporte_Area.xsc">
+      <DependentUpon>DS_Reporte_Area.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\DS_Reporte_Area.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Reporte_Area.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Formularios\Reportes\DS_Reporte_Area.xss">
+      <DependentUpon>DS_Reporte_Area.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\DS_Reporte_Articulo.xsc">
+      <DependentUpon>DS_Reporte_Articulo.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\DS_Reporte_Articulo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Reporte_Articulo.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Formularios\Reportes\DS_Reporte_Articulo.xss">
+      <DependentUpon>DS_Reporte_Articulo.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\DS_Reporte_Categoria.xsc">
+      <DependentUpon>DS_Reporte_Categoria.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\DS_Reporte_Categoria.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Reporte_Categoria.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Formularios\Reportes\DS_Reporte_Categoria.xss">
+      <DependentUpon>DS_Reporte_Categoria.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\DS_Reporte_Detalle_Transferencia.xsc">
+      <DependentUpon>DS_Reporte_Detalle_Transferencia.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\DS_Reporte_Detalle_Transferencia.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Reporte_Detalle_Transferencia.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Formularios\Reportes\DS_Reporte_Detalle_Transferencia.xss">
+      <DependentUpon>DS_Reporte_Detalle_Transferencia.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\DS_Reporte_Proveedor.xsc">
+      <DependentUpon>DS_Reporte_Proveedor.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\DS_Reporte_Proveedor.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Reporte_Proveedor.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Formularios\Reportes\DS_Reporte_Proveedor.xss">
+      <DependentUpon>DS_Reporte_Proveedor.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\DS_Reporte_Responsable.xsc">
+      <DependentUpon>DS_Reporte_Responsable.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\DS_Reporte_Responsable.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Reporte_Responsable.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Formularios\Reportes\DS_Reporte_Responsable.xss">
+      <DependentUpon>DS_Reporte_Responsable.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\DS_Reporte_Transferencia.xsc">
+      <DependentUpon>DS_Reporte_Transferencia.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Reportes\DS_Reporte_Transferencia.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Reporte_Transferencia.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Formularios\Reportes\DS_Reporte_Transferencia.xss">
+      <DependentUpon>DS_Reporte_Transferencia.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Datos\Datos.csproj">
+      <Project>{80e236d8-117c-4835-8083-c61520f492e3}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{29e65b01-984e-4cd6-bd09-ac11510ce758}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
+      <Project>{5e28883c-ebf5-4719-9d8f-d55ccd70a497}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
